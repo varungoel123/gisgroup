@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- http://examples.getbootstrap.com/navbar-static-top/index.html -->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+    <link href="css/navbar-static-top.css" rel="stylesheet">
+	<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link href="css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+
+    <style type="text/css">
+    img{
+		width:100px; /* you can use % */
+		height:100px;
+	}
+	
+	.jumbotron {
+		padding-bottom:10px;
+		padding-top:10px;
+		margin-bottom:60px;
+		background-color: #5C788B;
+		color: white;
+	}
+	
+	.navbar {
+		background-color: #202D36;
+	}
+
+	
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus {
+	  color: white;
+	  background-color: #202D36;
+	}
+	
+	.navbar-nav > .active > a,
+	.navbar-nav > .active > a:hover,
+	.navbar-nav > .active > a:focus {
+	  color: black;
+	  background-color: #d5d5d5;
+	}
+	
+	.navbar .navbar-brand {
+		color: white;
+	}
+	
+	.accordion-heading {
+		background-color: #F5F5F5;
+	}
+    </style>
+    
+<!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://twitter.github.com/assets/ico/favicon.png">
+
+</head>
+<body>  
+  
+<!-- Static navbar -->
+    <div class="navbar navbar-static-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">GIS Group</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a href="imap.html"><span class="glyphicon glyphicon-map-marker"></span> IMAP</a></li>
+            <li class="active"><a href="prospective_members.html"><span class="glyphicon glyphicon-fire"></span> Prospective Members</a></li>
+            <li><a href="current_members.html"><span class="glyphicon glyphicon-user"></span> Current Members</a></li>
+			<li class="active"><a href="imap.html"><span class="glyphicon glyphicon-map-marker"></span> IMAP</a></li>
+            <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+<!-- SUBHEADER -->
+	<div class="jumbotron">
+        <h1>Prospective Members</h1>
+        <p>Learn more about being a member</p>
+    </div>
+
+<!-- BODY -->
+<!-- jQuery Accordion -->
+	<div id="accordion">
+	  <h3>Why Join?</h3>
+	  <div>
+			<ul>
+				  <li>The application of what you learn in the classroom to real-world situations is one of the most effective ways to prepare for professional work</li>
+				  <li>The ability to interact with clients (ie. business owners, public servants, professors) and exhibit your work will increase your web of networks and can open up opportunities for the future</li>
+				  <li>The freedom that the group permits in how you approach assigned tasks will allow you to tap into your creativity and explore novel ways to approach real-world problems</li>
+				  <li>The group will provide a forum where you can interact with students from different departments at both a casual and intellectual capacity; the ability to engage in dialogues with individuals with different backgrounds, opinions and ideas is an invaluable experience</li>
+			</ul>
+	  </div>
+	  <h3>Expectations</h3>
+	  <div>
+			<ul>
+				  <li>Knowledge of how to use the ArcGIS software</li>
+				  <li>Taken statistics courses in high school and/or university</li>
+				  <li>Able to conduct oneself in an appropriate manner when communicating with clients (ie. being prompt for meetings, responsive to e-mails, being courteous)</li>
+				  <li>Accepting of different opinions and perspectives</li>
+				  <li>Commitment to the group (ie. being able to balance time between class-work and the GIS Group)</li>
+			</ul>
+	  </div>
+	  <h3>Group Environment</h3>
+	  <div>
+			<ul>
+				  <li>Members will be divided into teams - each team will be assigned to a particular project</li>
+				  <li>Team assignments will be based upon skill sets and interests in a project</li>
+				  <li>Tasks include: Data collection, Data analysis (spatial, statistical), Map production, Client presentations, Report writing, Group publicity </li>
+				  <li>Social events for team building</li>
+			</ul>
+	  </div>
+	</div>
+
+      <hr>
+
+      <footer>
+        <p>GIS Group &copy; 2013</p>
+		<p><b>The GIS Group is not an official agency or a part of the University. The University is not responsibile for its acts and liabilities.</b></p>
+      </footer>
+      
+    </div> <!-- /container -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script>
+		  $(function() {
+			$( "#accordion" ).accordion({
+			  collapsible: true,
+			  heightStyle: "content" 
+			});
+		  });
+		 </script> 
+</body>
+</html>
