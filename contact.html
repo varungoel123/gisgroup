@@ -23,25 +23,8 @@
 		padding-bottom:10px;
 		padding-top:10px;
 		margin-bottom:60px;
-		background-color: #5C788B;
+		background-color: #37A7E8;
 		color: white;
-	}
-	
-	.navbar {
-		background-color: #202D36;
-	}
-
-	.navbar-nav > li > a:hover,
-	.navbar-nav > li > a:focus {
-	  color: white;
-	  background-color: #202D36;
-	}
-	
-	.navbar-nav > .active > a,
-	.navbar-nav > .active > a:hover,
-	.navbar-nav > .active > a:focus {
-	  color: black;
-	  background-color: #d5d5d5;
 	}
 	
 	.navbar .navbar-brand {
@@ -60,21 +43,27 @@
 <body>  
 	
 <!-- Static navbar -->
-    <div class="navbar navbar-static-top">
+    <div class="navbar navbar-static-top navbar-inverse">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">GIS Group</a>
+        <a class="navbar-brand" href="index.html">GIS Group</a>
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="prospective_members.html"><span class="glyphicon glyphicon-fire"></span> Prospective Members</a></li>
-            <li><a href="current_members.html"><span class="glyphicon glyphicon-user"></span> Current Members</a></li>
-			<li><a href="imap.html"><span class="glyphicon glyphicon-map-marker"></span> IMAP</a></li>            
-            <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+			<li><a href="ongoing.html"><span class="glyphicon glyphicon-map-marker"></span> Ongoing Projects</a></li>    
+			<li class="dropdown">
+				<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="aboutus.html">Our Mission</a></li>
+				  <li><a href="current_members.html">The Team</a></li>
+				</ul>
+			</li>
+			<li class="active"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -85,7 +74,7 @@
 <!-- SUBHEADER -->
 	  <div class="jumbotron">
         <h1>Contact Information</h1>
-        <p>Contact us if you have any questions and/or are interested in our services</p>
+        <p>Email us at gisconsulting@gmail.com if you have any questions and/or are interested in our services</p>
       </div>
 
 <!-- BODY -->
